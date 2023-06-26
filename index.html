@@ -5,35 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h2>My Portfolio</h2>
-    <div class="center">
-      <a href="index.html">Home</a>
-      |
-      <a href="experience.html">Experience</a>
-      |
-      <a href="contact.html">Contact me</a>
+    <div class="border border-dark btn-warning p-2 rounded-2 d-flex gap-3">
+      <button class="btn-primary me-auto">
+        <a href="index.html" class="text-white">Home</a>
+      </button>
+
+      <a href="experience.html" class="text-white">Experience</a>
+      <a href="contact.html" class="text-white">Contact me</a>
+      <a href="gallery.html" class="text-white">Gallery</a>
     </div>
     <br />
-    <img
-      src="Picture/wayu.jpg"
-      width="200px"
-      style="margin-left: auto; margin-right: auto; display: block"
-    />
-    <p class="name">Wayu tharai</p>
-    <p class="center">
-      HI! my name is Yai. I'm studying in Chiang mai University.
-    </p>
-
-    <p class="name">Skill</p>
-    <div class="border-skill">
-      <h4 class="skill-header">Programming</h4>
-      <p>I can code C++, CSS, HTML and Python</p>
+    <div class="d-flex gap-1">
+      <img
+        src="Picture/wayu.jpg"
+        width="290px"
+        height="260px"
+        style="margin-left: auto; margin-right: auto; display: block"
+        class="rounded-circle"
+      />
+      <div class="me-auto my-auto">
+        <p class="text-primary fw-bold" style="font-size: 2rem">Wayu tharai</p>
+        <p class="">
+          HI! my name is Yai. I'm studying in computer engineering in Chiang mai
+          University.
+        </p>
+      </div>
     </div>
-    <div class="border-skill">
-      <h4 class="skill-header">Languages</h4>
-      <p>I can speak English very well and can speak Spanish <br /></p>
+
+    <p class="name fw-bold">Skill</p>
+    <div class="border-skill p-3 d-flex mx-auto gap-2 rounded-3 btn-secondary">
+      <img src="Picture/program.jpeg" alt="" width="200x" />
+      <div>
+        <h4 class="skill-header">Programming</h4>
+        <p>I can code C++, CSS, HTML and Python</p>
+      </div>
+    </div>
+    <div class="border-skill p-3 d-flex mx-auto gap-2 rounded-3 btn-secondary">
+      <img src="Picture/commu.webp" width="200x" alt="" />
+      <div>
+        <h4 class="skill-header">Languages</h4>
+        <p>I can speak English very well and can speak Spanish <br /></p>
+      </div>
     </div>
   </body>
 </html>
